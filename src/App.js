@@ -11,25 +11,29 @@ function App() {
     <Container className="fill">
       <Container className="text-center timer-box">
         <Row>Pomodoro Clock</Row>
-        <Row className="timer">timer</Row>
+        <Container className="timer timer-box">
+          <Row id='timer-label'>timer</Row>
+          <Row id='time-left'>time-left</Row>
+        </Container>
         <Container>
           <Row>
-            <Col>Break Time</Col>
-            <Col>Focus Time</Col>
+            <Col id='break-label'>Break Time</Col>
+            <Col id='session-label'>Focus Time</Col>
           </Row>
           <Row>
             <Col>
-              <Button variant="link"> - </Button>
-              <span>05</span>
-              <Button variant="link"> + </Button>
+              <Button variant="link" id='break-decrement'> - </Button>
+              <span id='break-length'>05</span>
+              <Button variant="link" id='break-increment'> + </Button>
             </Col>
             <Col>
-              <Button variant="link">-</Button>
-              <span>25</span>
-              <Button variant="link">+</Button>
+              <Button variant="link" id='session-decrement'>-</Button>
+              <span id='session-length'>25</span>
+              <Button variant="link" id='session-increment'>+</Button>
             </Col>
           </Row>
-          <Button variant="outline-danger">Start</Button>
+          <Button variant="outline-danger" id='start_stop'>Start</Button>
+          <Button variant="outline-danger" id='reset'>Reset</Button>
         </Container>
       </Container>
     </Container>
