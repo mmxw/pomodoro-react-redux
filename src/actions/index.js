@@ -1,11 +1,34 @@
-import { INCREASE, DECREASE } from "./constants/index";
+import {
+  FOCUSINCREASE,
+  FOCUSDECREASE,
+  BREAKINCREASE,
+  BREAKDECREASE,
+  RESET,
+} from "./constants/index";
 
-const handleIncrease = () => {
-  return { type: INCREASE };
+const handleFocusIncrease = () => {
+  return { type: FOCUSINCREASE };
 };
 
-const handleDecrease = () => {
-  return { type: DECREASE };
+const handleFocusDecrease = () => {
+  return { type: FOCUSDECREASE };
+};
+const handleBreakIncrease = () => {
+  return { type: BREAKINCREASE };
 };
 
-export default { handleIncrease, handleDecrease };
+const handleBreakDecrease = () => {
+  return { type: BREAKDECREASE };
+};
+
+const handleReset = () => {
+  return { type: RESET };
+};
+
+export default {
+  handleFocusIncrease,
+  handleFocusDecrease,
+  handleBreakIncrease,
+  handleBreakDecrease,
+  handleReset,
+};

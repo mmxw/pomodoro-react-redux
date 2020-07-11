@@ -1,4 +1,13 @@
-const INCREASE = "increase";
-const DECREASE = "decrease";
+const BREAKINCREASE = "breakIncrease";
+const FOCUSINCREASE = "focusIncrease";
+const BREAKDECREASE = "breakDecrease";
+const FOCUSDECREASE = "focusDecrease";
+const RESET = "reset";
 
-export default {INCREASE, DECREASE}
+export default {
+  FOCUSINCREASE,
+  FOCUSDECREASE,
+  BREAKINCREASE,
+  BREAKDECREASE,
+  RESET,
+};
