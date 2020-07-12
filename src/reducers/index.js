@@ -11,7 +11,7 @@ const initialState = {
   sessionTime: 25,
 };
 
-function timerReducer(state = initialState, action) {
+export default function timerReducer(state = initialState, action) {
   switch (action.type) {
     case FOCUSINCREASE: {
       return {...initialState, sessionTime: initialState.sessionTime + 1};
@@ -33,4 +33,4 @@ function timerReducer(state = initialState, action) {
   }
 }
 
-export default { timerReducer };
+

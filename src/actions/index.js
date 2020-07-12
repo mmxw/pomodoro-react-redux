@@ -6,29 +6,23 @@ import {
   RESET,
 } from "./constants/index";
 
-const handleFocusIncrease = () => {
+export const handleFocusIncrease = () => {
   return { type: FOCUSINCREASE };
 };
 
-const handleFocusDecrease = () => {
+export const handleFocusDecrease = () => {
   return { type: FOCUSDECREASE };
 };
-const handleBreakIncrease = () => {
+export const handleBreakIncrease = () => {
   return { type: BREAKINCREASE };
 };
 
-const handleBreakDecrease = () => {
+export const handleBreakDecrease = () => {
   return { type: BREAKDECREASE };
 };
 
-const handleReset = () => {
+export const handleReset = () => {
   return { type: RESET };
 };
 
-export default {
-  handleFocusIncrease,
-  handleFocusDecrease,
-  handleBreakIncrease,
-  handleBreakDecrease,
-  handleReset,
-};
+
